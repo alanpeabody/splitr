@@ -1,0 +1,4 @@
+splitr
+======
+
+Split Averager
