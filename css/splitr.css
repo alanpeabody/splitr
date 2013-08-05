@@ -1,8 +1,13 @@
-
-body {
-
+#app {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 2em;
 }
 
-#app {
+.split-row {
+  margin: .5em 0;
+}
 
+.split-row input {
+  width: 4em;
 }

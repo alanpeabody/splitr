@@ -9,10 +9,17 @@
   </head>
   <body>
     <div id='app'>
-      <h2>Splitr</h2>
+      <h1>Splitr</h2>
       <p>Enter your split times over a standard distance to get your average pace.</p>
-      <div ng-controller='SplitCtrl'>
+      <div ng-controller='SplitsCtrl'>
+        <h2>Your average is: {{ getAverage() }}</h2>
 
+        <div ng-repeat='split in splits' class='split-row'>
+          <input ng-model='split.minutes' type='number' placeholder='mm' class='minutes'>
+          <span>:</span>
+          <input ng-model='split.seconds' type='number' placeholder='ss' class='seconds'>
+        </div>
+        <button ng-click='addSplit()' class='btn btn-mini btn-primary'>+ Add Split</button>
       </div>
     </div>
   </body>
